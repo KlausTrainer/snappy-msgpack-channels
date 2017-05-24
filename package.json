@@ -3,7 +3,8 @@
   "description": "Multiplexed negotiated streams of framed Snappy-compressed MessagePack messages.",
   "main": "index.js",
   "scripts": {
-    "test": "standard && node node_modules/istanbul/lib/cli.js cover -- lab -vl && istanbul check-coverage"
+    "test": "standard && node node_modules/istanbul/lib/cli.js cover -- lab -vl && istanbul check-coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "snappy",
@@ -25,7 +26,8 @@
     "istanbul": "^0.4.5",
     "code": "^4.0.0",
     "lab": "^13.1.0",
-    "standard": "^10.0.2"
+    "standard": "^10.0.2",
+    "semantic-release": "^6.3.6"
   },
   "repository": {
     "type": "git",
@@ -33,5 +35,6 @@
   },
   "release": {
     "branch": "main"
-  }
+  },
+  "version": "0.0.0-development"
 }
